@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Application Tales - Documentation
 
 ## Présentation
@@ -74,3 +75,7 @@ L'application est construite selon l'architecture MVVM (Model-View-ViewModel) :
 - API OpenAI pour la génération de texte et d'images
 - Firebase pour le stockage des données
 - Glide pour le chargement optimisé des images
+=======
+# android_studio_project
+Project
+>>>>>>> e895f38569c5ec71b6024f4427ab27c32f7dab5a
