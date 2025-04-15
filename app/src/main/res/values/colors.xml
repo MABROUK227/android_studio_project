@@ -1,0 +1,11 @@
+<resources>
+    <color name="purple_primary">#6200EE</color>
+    <color name="purple_light">#BB86FC</color>
+    <color name="green_background">#5CDB95</color>
+    <color name="purple_header">#5E35B1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="button_blue">#4B4BEE</color>
+    <color name="lavender_circle">#D8C8F0</color>
+    <color name="yellow_star">#FFEB3B</color>
+</resources>

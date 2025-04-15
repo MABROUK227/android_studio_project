@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tales</string>
+    <string name="welcome_message">BIENVENUE DANS L\'UNIVERS DES COMPTINES, UN MONDE QUI VOUS FERA RÊVER ...</string>
+    <string name="listen_story">Écouter une histoire dès maintenant</string>
+    <string name="listen">Écouter</string>
+</resources>

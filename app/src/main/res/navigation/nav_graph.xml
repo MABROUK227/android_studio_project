@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.tales.ui.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_storyListFragment"
+            app:destination="@id/storyListFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_createStoryFragment"
+            app:destination="@id/createStoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storyListFragment"
+        android:name="com.example.tales.ui.storylist.StoryListFragment"
+        android:label="fragment_story_list"
+        tools:layout="@layout/fragment_story_list">
+        <action
+            android:id="@+id/action_storyListFragment_to_storyDetailFragment"
+            app:destination="@id/storyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createStoryFragment"
+        android:name="com.example.tales.ui.create.CreateStoryFragment"
+        android:label="fragment_create_story"
+        tools:layout="@layout/fragment_create_story">
+        <action
+            android:id="@+id/action_createStoryFragment_to_storyDetailFragment"
+            app:destination="@id/storyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storyDetailFragment"
+        android:name="com.example.tales.ui.detail.StoryDetailFragment"
+        android:label="fragment_story_detail"
+        tools:layout="@layout/fragment_story_detail">
+        <argument
+            android:name="storyId"
+            app:argType="string" />
+    </fragment>
+</navigation>
