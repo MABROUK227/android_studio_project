@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- En-tête violet -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_header"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            style="@style/TitleTextStyle" />
+    </RelativeLayout>
+
+    <!-- Contenu principal avec fond vert -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:background="@color/green_background"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/childNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/story_name_hint"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual" />
+
+        <EditText
+            android:id="@+id/storyElementsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/story_elements_hint"
+            android:layout_below="@id/childNameInput"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:lines="3"
+            android:gravity="top" />
+
+        <!-- Bouton de génération -->
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_story_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@id/storyElementsInput"
+            android:layout_marginTop="30dp" />
+
+        <!-- Indicateur de chargement -->
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_message"
+            android:layout_below="@id/loadingIndicator"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>
