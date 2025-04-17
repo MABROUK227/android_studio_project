@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<< HEAD
 # Application Tales - Documentation
 
 ## Présentation
